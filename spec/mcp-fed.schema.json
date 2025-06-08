@@ -1,0 +1,12 @@
+{ "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"MCP-Fed v0.1",
+  "allOf":[{ "$ref":"mcp-base.schema.json" }],
+  "properties":{
+    "audit_log":{"type":"array","items":{"type":"object"}},
+    "pii_tag":{"type":"string","enum":["PII","PHI","FISMA"]},
+    "signed_response":{"oneOf":[{"type":"boolean"},{"type":"string","format":"jws"}]},
+    "impact_level":{"type":"string","enum":["IL2","IL4","IL5","IL6"]},
+    "tool_perms":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["audit_log","signed_response"]
+}

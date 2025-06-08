@@ -1,0 +1,5 @@
+{ "name":"extract_entities",
+  "description":"Extract entities with PII tags",
+  "inputSchema":{"type":"object","properties":{"text":{"type":"string"}}},
+  "compliance":{"pii_handling":true,"audit_log":true,"fedramp_level":"high"}
+}

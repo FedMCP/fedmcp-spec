@@ -1,0 +1,8 @@
+name: spec-ci
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python fedmcp.py examples/extract_entities.manifest.json
