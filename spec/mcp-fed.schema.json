@@ -1,5 +1,5 @@
 { "$schema":"https://json-schema.org/draft/2020-12/schema",
-  "title":"MCP-Fed v0.1",
+  "title":"FedMCP v0.1",
   "allOf":[{ "$ref":"mcp-base.schema.json" }],
   "properties":{
     "audit_log":{"type":"array","items":{"type":"object"}},
