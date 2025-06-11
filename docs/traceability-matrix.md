@@ -1,4 +1,4 @@
-| MCP-Fed Feature / Field | Purpose | NIST 800-53 Rev 5 Control(s) |
+| FedMCP Feature / Field | Purpose | NIST 800-53 Rev 5 Control(s) |
 |-------------------------|---------|------------------------------|
 | `audit_log` verb        | Immutable log of agent/tool calls, timestamp, request & response hashes | **AU-2**, **AU-3**, **AU-12**, **SI-11** |
 | `signed_response` (JWS) | Cryptographic integrity + non-repudiation of tool output | **AU-10**, **SC-12**, **PE-20** |
