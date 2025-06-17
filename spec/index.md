@@ -11,7 +11,8 @@
 
 | Version     | Date  | Author | Notes             |
 | ----------- | ----- | ------ | ----------------- |
-|  0.2‑draft  |  TBD  |  LK    | Initial scaffold  |
+|  0.1‑draft  |  TBD  |  LK    | Initial scaffold  |
+|  0.2‑draft  |  TBD  |  LK    | Clean up scaffold |
 
 ---
 
