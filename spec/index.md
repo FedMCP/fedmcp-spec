@@ -12,7 +12,7 @@
 | Version     | Date  | Author | Notes             |
 | ----------- | ----- | ------ | ----------------- |
 |  0.1‑draft  |  TBD  |  LK    | Initial scaffold  |
-|  0.2‑draft  |  TBD  |  LK    | Clean up scaffold |
+|  0.2‑draft  |  TBD  |  LK    | Updated scaffold  |
 
 ---
 
@@ -74,7 +74,8 @@ Each Artifact is a top‑level JSON object with **required** fields:
 | `baseline_module` | Infrastructure baseline (Terraform/CDK)   |
 | `audit_script`    | Automated verification script             |
 
-\### 3.1 JSON Schema\
+### 3.1 JSON Schema
+
 The authoritative JSON Schema is published at [https://mcpfedspec.org/artifact.schema.json](https://mcpfedspec.org/artifact.schema.json).
 
 ```jsonc
