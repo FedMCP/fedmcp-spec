@@ -1,8 +1,9 @@
-# FedMCP Specification v0.1 (DRAFT)
+# FedMCP Specification v0.2 (DRAFT)
 
 > **Status** | Working Draft — internal review only\
-> **Editors** | Lance Kallman, FedMCP Team\
-> **Last updated** |&#x20;
+> **Editors** | Lance Kallman, FedMCP Team\
+> **Version** | v0.2\
+> **Last updated** | 2025‑06‑16
 
 ---
 
@@ -10,7 +11,7 @@
 
 | Version     | Date  | Author | Notes             |
 | ----------- | ----- | ------ | ----------------- |
-|  0.1‑draft  |  TBD  |  LK    | Initial scaffold  |
+|  0.2‑draft  |  TBD  |  LK    | Initial scaffold  |
 
 ---
 
@@ -61,7 +62,19 @@ Each Artifact is a top‑level JSON object with **required** fields:
 |  `createdAt`    |  RFC 3339 timestamp  | Creation time (UTC).                             |
 |  `jsonBody`     |  object              | Arbitrary schema defined per `type`.             |
 
-\### 3.1 JSON Schema
+\
+**Artifact Type Enumeration**
+
+| Type              | Description                               |
+| ----------------- | ----------------------------------------- |
+| `ssp_fragment`    | NIST 800‑53 System Security Plan fragment |
+| `poam_template`   | Plan of Action & Milestones template      |
+| `agent_recipe`    | LLM agent orchestration definition        |
+| `baseline_module` | Infrastructure baseline (Terraform/CDK)   |
+| `audit_script`    | Automated verification script             |
+
+\### 3.1 JSON Schema\
+The authoritative JSON Schema is published at [https://mcpfedspec.org/artifact.schema.json](https://mcpfedspec.org/artifact.schema.json).
 
 ```jsonc
 {
@@ -136,5 +149,5 @@ sequenceDiagram
 
 ---
 
-> **End of Spec v0.1 (Draft)**
+> **End of Spec v0.2 (Draft)**
 
